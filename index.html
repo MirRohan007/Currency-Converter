@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Currency Converter</h1>
+    </div>
+    <div class="form-container">
+        <form>
+            <div class="amount-container">
+                <label for="amount">Enter the Amount:</label>
+                <input type="text" id="amount" required/>
+            </div>
+            <div class="dropdown-container">
+                <div class="from-container">
+                    <label for="from">From</label>
+                    <div class="flag-container">
+                        <img id="from-img" src="https://flagcdn.com/48x36/in.png" />
+                        <select name="from" id="from" class="dropdown">
+                        </select>
+                    </div>
+                </div>
+                <div class="exchange-icon">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="to-container">
+                    <label for="to">To</label>
+                    <div class="flag-container">
+                        <img id="to-img" src="https://flagcdn.com/48x36/us.png" />
+                        <select name="to" id="to" class="dropdown">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h5 id="message">1 USD = 83 INR</h5>
+            <button id="get">Convert Currency</button>
+        </form>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
